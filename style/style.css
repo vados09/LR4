@@ -1,0 +1,81 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 3 мар. 2021 г., 19:33:55
+    Author     : User
+*/
+
+body{
+margin: 0;
+padding: 0;
+}
+div{
+height: 100px;
+width: 200px;
+background-color: red;
+margin: 10px 10px 10px 10px;
+}
+#d2 {
+    background-color: green
+}
+.first{
+    background-color: blue
+}
+p span {
+    color:#333;
+} /*Селектор потомка:
+если элементы находятся в p и там есть span то текст находящийся внутри span будет менять следую из значения указанного в селекторе */
+
+
+
+/* Селектор дочерних элементов:
+
+*/
+
+.content > ul {
+    margin-left: 0px
+}
+
+/* Селекторcестринского элемента:
+ если у h1 и span есть общий родитель то выделить текст в span жирным
+*/
+
+h1 + span {
+    font-weight: bold
+}
+
+/* Селектор обобщенных родственных элементов:
+все что идет после h1 в p будет с отступом 20 пикселей
+*/
+h1 ~ p {
+    text-indent: 20px 
+}
+
+/* Группировка селекторов:
+текст в h1 h2 и h3 будет зеленым*/
+h1, h2, h3 {
+    color: green;
+}
+
+
+/* Для тэга текста в тэге nav делает отступ снизу в 100 пикселей рамку в 20 цвет фона и цвет шрифта и добавляет рамку 5 пикселей цвета указанного в свойстве */
+nav { 
+  margin-bottom: 100px;
+  padding: 20px;
+  background-color: #4470c4;
+  color: #ffffff;
+  border: 5px solid #2d508f;
+}
+
+
+ a[href$=".ru"] { /* Если ссылка заканчивается на .ru */  
+    padding: 20px;  /* Смещаем на 2з пикселей со всех сторон */ 
+    background-image: linear-gradient(red, blue); /* Добавляем фоновый градиент */ 
+    color:#008000;
+    border: 5px solid #2d166f;
+ }
+    
+
